@@ -26,6 +26,6 @@ variable "network_ip_range" {
   default = "10.0.0.0/16"
 }
 
-variable "network_ip_range_agents" {
+variable "network_ip_range_agent" {
   default = "10.0.1.0/24"
 }
