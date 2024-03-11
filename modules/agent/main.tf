@@ -55,13 +55,13 @@ resource "hcloud_server" "agent" {
     var.network_private_subnet
   ]
   
-  user_data = data.cloudinit_config.bastion_server_config.rendered
+  user_data = data.cloudinit_config.agent_server_config.rendered
   
 
 }
 
 resource "hcloud_server_network" "agent_subnet" {
-  server_id  = hcloud_server.bastion.id
+  server_id  = hcloud_server.agent.id
   subnet_id = var.subnet_id
 
   depends_on = [

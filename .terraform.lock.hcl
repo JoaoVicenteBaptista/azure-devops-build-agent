@@ -4,6 +4,7 @@
 provider "registry.terraform.io/hashicorp/cloudinit" {
   version = "2.3.3"
   hashes = [
+    "h1:GmJ8PxLjjPr+lh02Bw3u7RYqA3UtpE2hQ1T43Vt7PTQ=",
     "h1:TCZQjXesJ9qbOZaHjJse/WyOxYQwp7wUX3VNxL/qo1c=",
     "zh:0bd6ee14ca5cf0f0c83d3bb965346b1225ccd06a6247e80774aaaf54c729daa7",
     "zh:3055ad0dcc98de1d4e45b72c5889ae91b62f4ae4e54dbc56c4821be0fdfbed91",
@@ -25,6 +26,7 @@ provider "registry.terraform.io/hetznercloud/hcloud" {
   constraints = ">= 1.36.0"
   hashes = [
     "h1:GrYK7Nk83TyHY9RjNtA95XP9oXKECKmNnzdv3oW3pXM=",
+    "h1:dh2iL5GHfDui5DbZFD/kcWlwzmC6slgUirA0FbZBK7g=",
     "zh:1c4b44a698cfaca215bdbadaf92669dd23533210c3cbf32895fbf4ff7acf6c24",
     "zh:2915f8385559694e5097d8d0df16358200e9f0d9efb80559e9ea0bd072d792b9",
     "zh:3a6b37b0bba50d263bd3dba26185bde13c825e59b6b301ab3f9f45686a21456b",
