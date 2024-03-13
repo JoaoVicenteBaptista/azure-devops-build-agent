@@ -15,7 +15,7 @@ variable "location" {
 
 
 variable "server_type" {
-  default = "CX21"
+  default = "cx21"
 }
 
 variable "os_type" {
