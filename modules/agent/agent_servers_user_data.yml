@@ -29,5 +29,5 @@ runcmd:
   - sed -ie '/^#AuthorizedKeysFile/s/^.*$/AuthorizedKeysFile .ssh/authorized_keys/' /etc/ssh/sshd_config
   - sed -i '$a AllowUsers devops' /etc/ssh/sshd_config
   - systemctl restart ssh
-  - sudo apt install podman-docker -y
+  - sudo apt install podman-docker qemu-user-static -y
   - shutdown -r now
