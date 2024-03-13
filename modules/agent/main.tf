@@ -7,7 +7,7 @@ data "cloudinit_config" "agent_server_config" {
   part {
     content_type = "text/cloud-config"
     content = templatefile("${path.module}/agent_servers_user_data.yml", {
-      ssh_public_key: file("~/.ssh/tf_hetzner.pub")
+      ssh_public_key: file("c:/users/joaob/.ssh/tf_hetzner.pub")
       network_ip_range: var.network_ip_range
     })
   }
@@ -17,7 +17,7 @@ data "cloudinit_config" "agent_server_config" {
       write_files = [
         {
           encoding    = "b64"
-          content     = filebase64("~/.ssh/tf_hetzner")
+          content     = filebase64("c:/users/joaob/.ssh/tf_hetzner")
           path        = "/home/devops/.ssh/tf_hetzner"
           owner       = "devops:devops"
           permissions = "0600"
