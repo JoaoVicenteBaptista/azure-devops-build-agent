@@ -23,10 +23,11 @@ ssh -i ~/.ssh/tf_hetzner devops@<host>
 export TF_VAR_hcloud_token="<token>"
 ```
 ### Windows Powershell
-## Windows Powershell
 ```
 $env:TF_VAR_hcloud_token="<token>"
 ```
+## Download local build agent
+https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/windows-agent?view=azure-devops#download-and-configure-the-agent
 
 ### Reference
 * https://medium.com/@orestovyevhen/set-up-infrastructure-in-hetzner-cloud-using-terraform-ce85491e92d
