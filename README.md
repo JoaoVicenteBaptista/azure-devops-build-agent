@@ -16,6 +16,18 @@ terraform apply -auto-approve
 ## SSH'ing to the VMs
 ssh -i ~/.ssh/tf_hetzner devops@<host>
 
+## Setting environment variables
+### Unix/Linux/MacOS
+
+```
+export TF_VAR_hcloud_token="<token>"
+```
+### Windows Powershell
+## Windows Powershell
+```
+$env:TF_VAR_hcloud_token="<token>"
+```
+
 ### Reference
 * https://medium.com/@orestovyevhen/set-up-infrastructure-in-hetzner-cloud-using-terraform-ce85491e92d
 
